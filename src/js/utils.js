@@ -120,6 +120,29 @@
     return s;
 };
 
+µBlock.formatDollars = function(count) {
+    if ( typeof count !== 'number' ) {
+        return '';
+    }
+    var s = count.toFixed(0);
+    if ( count < 1 ) {
+        s = count.toFixed(2);
+    } else if ( count >= 1000 ) {
+        if ( count < 10000 ) {
+            s = '>' + s.slice(0,1) + 'k';
+        } else if ( count < 100000 ) {
+            s = s.slice(0,2) + 'k';
+        } else if ( count < 1000000 ) {
+            s = s.slice(0,3) + 'k';
+        } else if ( count < 10000000 ) {
+            s = s.slice(0,1) + 'M';
+        } else {
+            s = s.slice(0,-6) + 'M';
+        }
+    }
+    return "$" + s;
+};
+
 // https://www.youtube.com/watch?v=DyvzfyqYm_s
 
 /******************************************************************************/

@@ -452,7 +452,7 @@ var renderPopup = function() {
     }
     uDom.nodeFromId('total-blocked').textContent = text;
     
-    blocked = popupData.globalDollarsBlocked;
+    blocked = popupData.globalBlockedDollars;
     if ( total === 0 ) {
         text = formatNumber(0);
     } else {

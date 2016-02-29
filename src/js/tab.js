@@ -779,7 +779,7 @@ vAPI.tabs.registerListeners();
             }
         }
 
-        vAPI.setIcon(tabId, state ? 'on' : 'off', badge);
+        vAPI.setIcon(tabId, state ? 'on' : 'off', this.formatDollars(µb.localSettings.blockedDollars));
     };
 
     return function(tabId) {
