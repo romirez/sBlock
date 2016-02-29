@@ -59,6 +59,10 @@
     "message":"since install",
     "description":"English: since install"
   },
+  "popupBlockedDollarsSinceInstallPrompt":{
+    "message":"dollars blocked",
+    "description":"English: dollars blocked since install"
+  },  
   "popupOr":{
     "message":"or",
     "description":"English: or"

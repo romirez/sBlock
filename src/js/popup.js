@@ -451,6 +451,14 @@ var renderPopup = function() {
                        .replace('{{percent}}', formatNumber(Math.floor(blocked * 100 / total)));
     }
     uDom.nodeFromId('total-blocked').textContent = text;
+    
+    blocked = popupData.globalDollarsBlocked;
+    if ( total === 0 ) {
+        text = formatNumber(0);
+    } else {
+        text = formatNumber(blocked);
+    }
+    uDom.nodeFromId('total-dollars-blocked').textContent = "$" + text;
 
     // https://github.com/gorhill/uBlock/issues/507
     // Convenience: open the logger with current tab automatically selected

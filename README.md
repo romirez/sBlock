@@ -1,3 +1,11 @@
+This is a modification of uBlock Origin that enables tracking not just the number of requests blocked, but also the approximate amount of money that went unearned by the owners of the content you browsed.
+
+Ideas to determine which requests are revenue:
+- whitelist of known advertising domains
+- use dimensions of the dom element blocked (if this can be determined)
+- do some statistical analysis of typical browsing and determine which percentage of blocked requests are ads, and then extrapolate
+
+
 [![Build](https://travis-ci.org/gorhill/uBlock.svg?branch=master)](https://travis-ci.org/gorhill/uBlock)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/ublock/localized.png)](https://crowdin.com/project/ublock)
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt)

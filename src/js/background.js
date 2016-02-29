@@ -86,6 +86,7 @@ return {
 
     localSettings: {
         blockedRequestCount: 0,
+        dollarsBlocked: 0,
         allowedRequestCount: 0
     },
     localSettingsModifyTime: 0,

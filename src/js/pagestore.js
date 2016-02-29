@@ -640,6 +640,7 @@ PageStore.prototype.logRequest = function(context, result) {
         this.hostnameToCountMap[requestHostname] += 0x00000001;
         this.perLoadBlockedRequestCount++;
         µb.localSettings.blockedRequestCount++;
+        µb.localSettings.blockedDollars += 0.001;        
     } else /* if ( c === '' || c === 'a' || c === 'n' ) */ {
         this.hostnameToCountMap[requestHostname] += 0x00010000;
         this.perLoadAllowedRequestCount++;

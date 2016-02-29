@@ -284,6 +284,7 @@ var popupDataFromTabId = function(tabId, tabTitle) {
         firewallPaneMinimized: µb.userSettings.firewallPaneMinimized,
         globalAllowedRequestCount: µb.localSettings.allowedRequestCount,
         globalBlockedRequestCount: µb.localSettings.blockedRequestCount,
+        globalDollarsBlocked: µb.localSettings.dollarsBlocked,
         netFilteringSwitch: false,
         rawURL: tabContext.rawURL,
         pageURL: tabContext.normalURL,
